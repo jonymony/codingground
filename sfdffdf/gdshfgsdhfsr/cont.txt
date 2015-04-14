@@ -1,0 +1,240 @@
+BONAFIDE CERTIFICATE
+
+Certified that this project report “CHANNEL DECODING (PORTING) FOR DRM RECEIVER” is the bonafide work of “M.SHARON PREETHI” who carried out the project work under my supervision.
+	
+
+SIGNATURE 						SIGNATURE
+
+
+
+
+__________________________________________________________________________
+Submitted for the Full Semester Viva Voce held on ……………………….
+
+Internal Examiner 					External Examiner
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ABSTRACT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+TABLE OF CONTENTS
+	TITLE	Page No.
+	BONAFIDE CERTIFICATE	i
+	ACKNOWLEDGEMENT	ii
+	ABSTRACT	iii
+	TABLE OF CONTENTS	iv
+	LIST OF FIGURES	vi
+	LIST OF TABLES	vii
+	LIST OF ABBREVIATIONS	viii
+	LIST OF SYMBOLS	ix
+1.	INTRODUCTION	1
+	1.2 General characteristic	1
+	1.2.1 System overview	2
+	1.2.2 System architecture	3
+2.	TRANSMISSION MODES	5
+	2.1 Signal bandwidth related parameters	5
+	2.3 Coding rates and constellations	5
+	2.2 Transmission efficiency related parameters	5
+	2.4 OFDM parameter set	6
+3.	CHANNEL CODING	8
+	3.1 Multiplex definition	9
+	3.1.1 Introduction	9
+	3.1.2 Main Service Channel (MSC)	9
+	3.1.2.1 Introduction	9
+	3.1.2.2 Structure	9
+	3.1.2.3 Building the MSC	10
+
+
+	3.1.2.4 Multiplex frames	10
+	3.1.2.5 Hierarchical frames	11
+	3.1.2.6 Reconfiguration	11
+	3.2 Fast Access Channel (FAC)	11
+	3.2.1 Introduction	11
+	3.2.2 Structure	12
+	3.2.3 Channel parameters	12
+	3.2.4 Service parameters	16
+	3.3 CRC	18
+	3.4 FAC repetition	18
+	3.5 Transport multiplex adaptation	18
+	3.5.2 FAC	23
+	3.5.3 SDC	24
+	3.6 Energy dispersal	24
+4.	TAG ITEMS SPECIFYING DRM MULTIPLEX	27
+	4.1 Robustness mode (robm)	27
+	4.2 Fast Access Channel (fac_)	28
+	4.3 Service Description Channel (sdc_)	28
+	4.4 MSC stream data <n> (str0, str1, str2 and str3)	29
+5.	CONCLUSION	31
+		
+		
+		
+		
+		
+		
+		
+
+LIST OF FIGURES
+
+FIGURE NO:	DESCRIPTION	Page No.
+1.1	Conceptual DRM transmission block diagram	
+1.2	DRM Receiver block diagram	
+2.1	Functional block diagram of the coding and interleaving	
+3.1	PRBS generator	
+4.1	Robustness mode	
+4.2	Fast Access Channel	
+4.3	Service Description Channel	
+4.4	MSC stream data	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+LIST OF TABLES
+TABLE NO:	DESCRIPTION	PAGE NO:
+1.1	Robustness mode uses	
+1.2	OFDM symbol parameters	
+3.1	Code rate combinations for the MSC with 16-QAM(robustness modes A, B, C and D)	
+3.2	Code rate combinations for the MSC with 64-QAM(robustness modes A, B, C and D)	
+3.3	Code rate combinations for the SPP of MSC with HMsym 64-QAM(robustness modes A, B, C and D)	
+3.4	Code rate combinations for the VSPP of MSC with HMsym 64-QAM(robustness modes A, B, C and D)	
+3.5	Code rate combinations for the SPP of MSC with HMmix 64-QAM(robustness modes A, B, C and D)	
+3.6	Number of QAM cells NSDC for SDC	
+3.7	First 16 bits of the PRBS	
+4.1	Robustness mode encoding	
+
+
+
+
+
+
+
+
+
+
+
+
+LIST OF ABBREVIATIONS
+AFS		-	 Alternative Frequency Switching
+AM 		-	Amplitude Modulation
+CRC		-	 Cyclic Redundancy Check
+DRM 		-	Digital Radio Mondiale
+EEP 		-	Equal Error Protection
+FAC		 -	Fast Access Channel
+FM 		-	Frequency Modulation
+HF 		-	High Frequency
+HMmix 	-	mixed Hierarchical Mapping
+HMsym 	-	symmetrical Hierarchical Mapping
+LF		-	 Low Frequency
+MF 		-	Medium Frequency
+MSb 		-	Most Significant bit
+MSC 		-	Main Service Channel
+OFDM	-	Orthogonal Frequency Division Multiplexing
+OIRT		-	 Organisation Internationale de Radiodiffusion et de Télévision
+Pan 		-	Panorama
+PRBS		-	 Pseudo-Random Binary Sequence
+QAM 		-	Quadrature Amplitude Modulation
+rfa 		-	reserved for future addition
+rfu		 -	reserved for future use
+SDC 		-	Service Description Channel
+SM 		-	Standard Mapping
+SPP 		-	Standard Protected Part
+UEP 		-	Unequal Error Protection
+VSPP 		-	Very Strongly Protected Part
+
+
+
+
+LIST OF SYMBOLS
+fR		-	 reference frequency of the emitted signal
+K		-	 number of active carriers in the OFDM symbol
+Kmax 		-	carrier index of the upper active carrier in the OFDM signal
+Kmin 		-	carrier index of the lower active carrier in the OFDM signal
+LMUX 		-	number of input bits per multiplex frame for the multilevel encoding
+NMUX 		-	number of MSC cells (QAM symbols) per multiplex frame
+T		 -	elementary time period, equal to 831/3 μs (1/12 kHz)
+Tf 		-	duration of the transmission frame
+Tg 		-	duration of the guard interval
+Ts 		-	duration of an OFDM symbol
+Tsf 		-	duration of the transmission super-frame built from the set of 
+                                  Transmission frames               
+Tu                   -          duration of the useful (orthogonal) part of an OFDM symbol,     excluding the guard interval
+X* 		-	complex conjugate of value X
+⌈  ⌉		-	round towards plus infinity
+⌊  ⌋		-	round towards minus infinity
+
+   
+
+
+
+
+
+
+
+
+
