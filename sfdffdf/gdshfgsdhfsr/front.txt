@@ -1,0 +1,23 @@
+CHANNEL   DECODING (PORTING) FOR DRM RECEIVER
+
+a project report Submitted by
+
+M.SHARON PREETHI (UR11EC239)
+in partial fulfillment for the award of the degree
+of
+BACHELOR OF TECHNOLOGY
+in
+ELECTRONICS AND COMMUNICATION ENGINEERING
+under the supervision of
+Dr. SHOBHA REKH
+
+ 
+
+SCHOOL OF ELECTRICAL SCIENCES
+KARUNYA UNIVERSITY
+(Karunya Institute of Technology and Sciences)
+(Declared as Deemed-to-be-under Sec-3 of the UGC Act, 1956)
+Karunya Nagar,Coimbatore - 641 114. INDIA
+
+JANUARY 2011
+
