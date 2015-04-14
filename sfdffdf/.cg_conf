@@ -1,0 +1,1 @@
+{"id":"sdcc","ext":"c","version":"SDCC v3.3.0","compile":"","execute":"sdcc *.c","preview":"","command":"","file":"/home/cg/src/samples/demo.c","url":"execute_embedded_c_online.php","mode":"c_cpp"}
